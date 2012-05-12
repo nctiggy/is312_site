@@ -31,4 +31,25 @@ describe "StaticPages" do
       page.should have_selector('title', :text => "Craig Smith's Web Site | Job")
     end
   end
+  describe "Hobbies Page" do
+    it "should have the h1 'Hobbies Page'" do
+      visit '/static_pages/hobbies'
+      page.should have_selector('h1', :text => "Hobbies Page")
+    end
+    it "Should have the right title" do
+      visit '/static_pages/hobbies'
+      page.should have_selector('title', :text => "Craig Smith's Web Site | Hobbies")
+    end
+  end
+  describe "iPad Page" do
+    it "should have the h1 'iPad Page'" do
+      visit '/static_pages/ipad'
+      page.should have_selector('h1', :text => "iPad Page")
+    end
+    it "Should have the right title" do
+      visit '/static_pages/ipad'
+      page.should have_selector('title', :text => "Craig Smith's Web Site | iPad")
+    end
+  end
+  
 end
