@@ -13,4 +13,10 @@ describe "StaticPages" do
       page.should have_content('Family Page')
     end
   end
+  describe "Job Page" do
+    it "should have the content 'Job Page'" do
+      visit '/static_pages/family'
+      page.should have_content('Job Page')
+    end
+  end
 end

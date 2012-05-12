@@ -2,6 +2,8 @@ Is312Site::Application.routes.draw do
   get "static_pages/home"
 
   get "static_pages/family"
+  
+  get "static_pages/job"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
