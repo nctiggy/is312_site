@@ -2,21 +2,33 @@ require 'spec_helper'
 
 describe "StaticPages" do
   describe "Home Page" do
-    it "should have the content 'Sample App'" do
+    it "should have the h1 'Home Page'" do
       visit '/static_pages/home'
-      page.should have_content('Sample App')
+      page.should have_selector('h1', :text => "Home Page")
+    end
+    it "Should have the right title" do
+      visit '/static_pages/home'
+      page.should have_selector('title', :text => "Craig Smith's Web Site | Home")
     end
   end
   describe "Family Page" do
-    it "Should have the content 'Family Page'" do
+    it "Should have the h1 'Family Page'" do
       visit '/static_pages/family'
-      page.should have_content('Family Page')
+      page.should have_selector('h1', :text => "Family Page")
+    end
+    it "Should have the right title" do
+      visit '/static_pages/family'
+      page.should have_selector('title', :text => "Craig Smith's Web Site | Family")
     end
   end
   describe "Job Page" do
-    it "should have the content 'Job Page'" do
-      visit '/static_pages/family'
-      page.should have_content('Job Page')
+    it "should have the h1 'Job Page'" do
+      visit '/static_pages/job'
+      page.should have_selector('h1', :text => "Job Page")
+    end
+    it "Should have the right title" do
+      visit '/static_pages/job'
+      page.should have_selector('title', :text => "Craig Smith's Web Site | Job")
     end
   end
 end
