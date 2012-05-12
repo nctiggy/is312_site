@@ -7,10 +7,15 @@ gem 'rails', '3.2.3'
 group :development, :test do
   gem 'sqlite3'
   gem 'rspec-rails'
+  gem 'guard-rspec'
 end
 
 group :test do
+  gem 'rb-fsevent', :require => false
   gem 'capybara'
+  gem 'growl'
+  gem 'guard-spork'
+  gem 'spork'
 end
 
 group :production do
