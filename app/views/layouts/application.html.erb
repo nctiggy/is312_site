@@ -2,13 +2,34 @@
 <html>
 <head>
   <title><%= full_title(@title) %></title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= stylesheet_link_tag    "application", media: "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
-
+<div class="navbar">
+	<div class="navbar-inner">
+		<div class="container-fluid">	
+			<%= image_tag "header.png", class: "brand" %>
+				<ul class="nav">
+					<%= nav_link "Home", home_path %>
+					<%= nav_link "Family", family_path %>
+					<%= nav_link "Job", job_path %>
+					<%= nav_link "Hobbies", hobbies_path %>
+					<%= nav_link "iPad", ipad_path %>
+				</ul>
+		</div>
+	</div>
+</div>
+<div class="container-fluid">
+<div class="row-fluid">
+	<div class="span12">
+		<div class="row-fluid">
+			<div class="span4"><div class="hero-unit"><%= image_tag "header.png" %></div></div>
+			<div class="span8"><%= yield %></div>
+		</div>
+	</div>
+</div>
+</div>
 </body>
 </html>

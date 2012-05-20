@@ -1,14 +1,9 @@
 Is312Site::Application.routes.draw do
-  get "static_pages/home"
-
-  get "static_pages/family"
-  
-  get "static_pages/job"
-  
-  get "static_pages/ipad"
-  
-  get "static_pages/hobbies"
-
+match '/home', to: 'static_pages#home'
+match '/family', to: 'static_pages#family'
+match '/job', to: 'static_pages#job'
+match '/hobbies', to: 'static_pages#hobbies'
+match '/ipad', to: 'static_pages#ipad'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -58,7 +53,7 @@ Is312Site::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  # root :to => 'welcome#index'
+  root to: 'static_pages#home'
 
   # See how all your routes lay out with "rake routes"
 
