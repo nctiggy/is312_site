@@ -7,29 +7,21 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<div class="navbar">
-	<div class="navbar-inner">
-		<div class="container-fluid">	
-			<%= image_tag "header.png", class: "brand" %>
-				<ul class="nav">
-					<%= nav_link "Home", home_path %>
-					<%= nav_link "Family", family_path %>
-					<%= nav_link "Job", job_path %>
-					<%= nav_link "Hobbies", hobbies_path %>
-					<%= nav_link "iPad", ipad_path %>
-				</ul>
-		</div>
-	</div>
-</div>
-<div class="container-fluid">
-<div class="row-fluid">
-	<div class="span12">
+	<%= render 'layouts/header' %>
+	<div class="container-fluid body">
 		<div class="row-fluid">
-			<div class="span4"><div class="hero-unit"><%= image_tag "header.png" %></div></div>
-			<div class="span8"><%= yield %></div>
+			<div class="span9 payload" align="center">
+				<%= yield %>
+			</div>
+			<div class="span3">
+				<div class="twitter">
+					<%= render 'layouts/twitter' %>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<%= render 'layouts/footer' %>
 		</div>
 	</div>
-</div>
-</div>
 </body>
 </html>

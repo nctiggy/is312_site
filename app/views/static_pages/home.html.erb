@@ -1,4 +1,6 @@
-<div class="hero-unit">
-	<h1><%= current_page?(home_path) %></h1>
-<p><%= home_path %></p>
-</div>
+<%= render 'layouts/carousel' %>
+<script type="text/javascript" charset="utf-8">
+$('.carousel').carousel({
+  interval: 4000
+})
+</script>

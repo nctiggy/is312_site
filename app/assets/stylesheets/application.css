@@ -11,3 +11,29 @@
  *= require_self
  *= require_tree .
 */
+body {
+	padding-top: 50px;
+}
+
+.footer .copyright{
+	float: right;
+}
+
+
+
+.payload {
+	background-color:#F0F0F0;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.body {
+	margin-right: 5%;
+	margin-left: 5%;
+}
+
+.twitter {
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	float: right;
+}

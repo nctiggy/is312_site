@@ -16,4 +16,10 @@ module StaticPagesHelper
     end
   end
   
+  def email_link(email_add)
+      content_tag(:span, nil, class: "label") do
+        mail_to email_add
+      end
+  end
+  
 end
