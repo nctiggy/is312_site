@@ -1,4 +1,6 @@
 Is312Site::Application.routes.draw do
+  resources :pictures
+
 match '/home', to: 'static_pages#home'
 match '/family', to: 'static_pages#family'
 match '/job', to: 'static_pages#job'
