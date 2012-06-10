@@ -37,3 +37,7 @@ body {
 	border-radius: 5px;
 	float: right;
 }
+
+.text {
+	align: left;
+}

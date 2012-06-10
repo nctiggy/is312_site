@@ -12,6 +12,8 @@
 
 .carousel .item > img { 
 	display: inline-block;
+	max-width: 640px;
+	max-height: 480px;
 }
 
 .carousel {
@@ -23,3 +25,4 @@
 	max-width: 30px;
 	border-radius: 5px;
 }
+

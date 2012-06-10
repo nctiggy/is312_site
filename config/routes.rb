@@ -4,6 +4,8 @@ match '/family', to: 'static_pages#family'
 match '/job', to: 'static_pages#job'
 match '/hobbies', to: 'static_pages#hobbies'
 match '/ipad', to: 'static_pages#ipad'
+match '/guitar', to: 'static_pages#guitar'
+match '/familypics', to: 'static_pages#familypics'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

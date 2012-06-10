@@ -14,4 +14,12 @@ class StaticPagesController < ApplicationController
   def ipad
     @title="iPad"
   end
+  def guitar
+    @title="Guitar Pictures"
+    @pictures="layouts/guitarpics"
+  end
+  def familypics
+    @title="Family Pictures"
+    @pictures="layouts/pennypics"
+  end
 end

@@ -1,8 +1,20 @@
-<h1>Craig's Family</h1>
-<p>I love my family. 
-<%= render 'layouts/carousel' %>
-<script type="text/javascript" charset="utf-8">
-$('.carousel').carousel({
-  interval: 4000
-})
-</script>
+<div class="container-fluid">
+	<div class="span1">
+	</div>
+	<div>
+		<h1>Craig's Family</h1><br />
+		<p>I love my family. My wife and I have a brand new baby girl who is just about to be a one year old in June!</p>
+		<ul>
+			<li>Here are some of the things we like to do together</li>
+			<ul>
+				<li>Go for walks after work</li>
+				<li>Go to the park and swing</li>
+				<li>Go to the Zoo on the weekends</li>
+				<li>Hang out in the backyard in the summer</li>
+				<li>Play music together</li>
+				<li>Go for drives to new places</li>
+			</ul>
+		</ul>
+	</div>
+	<h3><%= link_to "Craig's Family Photos", familypics_path %></h3>
+</div>
